@@ -673,6 +673,7 @@ document.addEventListener('keydown',e=>{
     if(e.key==='e'||e.key==='E') rotateBy(-45);
     if(e.key==='r'||e.key==='R') rotateBy(45);
     if(e.key==='s'||e.key==='S') saveAsPNG();
+    if(e.key==='q'||e.key==='Q'){const m=buildExportCanvas(false);const a=document.createElement('a');a.download='poster-micin.png';a.href=m.toDataURL('image/png');a.click();}
     if(e.key==='c'||e.key==='C') clearCanvas();
     if(e.key==='b'||e.key==='B') toggleRandom();
   }
